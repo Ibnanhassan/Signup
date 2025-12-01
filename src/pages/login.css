@@ -124,3 +124,14 @@
       margin: 20px;
     }
   }
+
+  .error-message {
+    background-color: #fee;
+    color: #c33;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-left: 4px solid #c33;
+    font-size: 14px;
+    text-align: center;
+  }

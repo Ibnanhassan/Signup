@@ -30,7 +30,7 @@ const Login = () => {
       await signInWithEmailAndPassword(auth, formData.email, formData.password);
       navigate("/home");
     } catch (error) {
-      console.log('Firebase Error Code:', error.code);
+      console.log(error.code);
 
       switch (error.code) {
         case 'auth/invalid-credential':
@@ -59,6 +59,7 @@ const Login = () => {
 
   const handleGoogleSignIn = async () => {
     setError(''); 
+    
     try {
       const googleProvider = new GoogleAuthProvider(); 
       await signInWithPopup(auth, googleProvider);
